@@ -1,0 +1,40 @@
+{
+  "name": "angular2-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "test-once": "tsc && karma start karma.conf.js --single-run",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.28",
+    "concurrently": "^3.5.0",
+    "core-js": "^2.5.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "@angular/common": "^4.4.2",
+    "@angular/compiler": "^4.4.2",
+    "@angular/core": "^4.4.2",
+    "@angular/platform-browser": "^4.4.2",
+    "@angular/platform-browser-dynamic": "^4.4.2",
+    "core-js": "^2.5.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.19",
+    "zone.js": "^0.8.17"
+  }
+}
